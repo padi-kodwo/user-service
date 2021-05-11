@@ -10,12 +10,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Article extends BaseMongoModel {
-  private Source source;
-  private String author;
-  private String title;
-  private String description;
-  private String url;
-  private String urlToImage;
-  private String publishedAt;
-  private String content;
+    private Source source;
+    private String author;
+    private String title;
+    private String description;
+    private String url;
+    private String urlToImage;
+    private String publishedAt;
+    private String content;
 }

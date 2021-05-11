@@ -10,9 +10,9 @@ import java.util.List;
 @Document
 @Data
 public class User extends BaseMongoModel {
-  private String lastName;
-  private String firstName;
-  private String otherName;
-  private String dob;
-  private List<Interest> interests;
+    private String lastName;
+    private String firstName;
+    private String otherName;
+    private String dob;
+    private List<Interest> interests;
 }

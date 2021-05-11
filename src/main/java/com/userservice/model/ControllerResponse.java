@@ -12,54 +12,54 @@ import java.util.Objects;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ControllerResponse {
 
-  private int code;
-  private String message;
-  private List<Object> data;
-  private long total;
-  private long duration;
-  private String requestId;
+    private int code;
+    private String message;
+    private List<Object> data;
+    private long total;
+    private long duration;
+    private String requestId;
 
-  public ControllerResponse(
-      int code, String message, List<Object> data, long total, long duration, String requestId) {
-    this.code = code;
-    this.message = message;
-    this.data = data;
-    this.total = total;
-    this.duration = duration;
-    this.requestId = requestId;
-  }
+    public ControllerResponse(
+        int code, String message, List<Object> data, long total, long duration, String requestId) {
+      this.code = code;
+      this.message = message;
+      this.data = data;
+      this.total = total;
+      this.duration = duration;
+      this.requestId = requestId;
+    }
 
-  @Override
-  public String toString() {
-    return "ControllerResponse{"
-        + "code="
-        + code
-        + ", message='"
-        + message
-        + '\''
-        + ", data="
-        + data
-        + ", total="
-        + total
-        + ", duration="
-        + duration
-        + '}';
-  }
+    @Override
+    public String toString() {
+      return "ControllerResponse{"
+          + "code="
+          + code
+          + ", message='"
+          + message
+          + '\''
+          + ", data="
+          + data
+          + ", total="
+          + total
+          + ", duration="
+          + duration
+          + '}';
+    }
 
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-    ControllerResponse that = (ControllerResponse) o;
-    return code == that.code
-        && total == that.total
-        && duration == that.duration
-        && Objects.equals(message, that.message)
-        && Objects.equals(data, that.data);
-  }
+    @Override
+    public boolean equals(Object o) {
+      if (this == o) return true;
+      if (o == null || getClass() != o.getClass()) return false;
+      ControllerResponse that = (ControllerResponse) o;
+      return code == that.code
+          && total == that.total
+          && duration == that.duration
+          && Objects.equals(message, that.message)
+          && Objects.equals(data, that.data);
+    }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(code, message, data, total, duration);
-  }
+    @Override
+    public int hashCode() {
+      return Objects.hash(code, message, data, total, duration);
+    }
 }
